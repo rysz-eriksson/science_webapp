@@ -1,13 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const linkStyles = {
-    textDecoration: 'none'
-}
-
-const activeStyles = {
-    color: 'green'
-}
+import headerStyles from './header.module.css';
 
 const Header = () => {
     return (
@@ -18,8 +12,8 @@ const Header = () => {
                     <li>
                         <Link
                             to="/about"
-                            style={linkStyles}
-                            activeStyle={activeStyles}
+                            className={headerStyles.link}
+                            activeClassName={headerStyles.active}
                         >
                             O CENTRUM
                         </Link>
@@ -27,8 +21,8 @@ const Header = () => {
                     <li>
                         <Link
                             to="/research"
-                            style={linkStyles}
-                            activeStyle={activeStyles}
+                            className={headerStyles.link}
+                            activeClassName={headerStyles.active}
                         >
                             BADANIA
                         </Link>
@@ -36,8 +30,8 @@ const Header = () => {
                     <li>
                         <Link
                             to="/onboarding"
-                            style={linkStyles}
-                            activeStyle={activeStyles}
+                            className={headerStyles.link}
+                            activeClassName={headerStyles.active}
                         >
                             WDROŻENIE
                         </Link>
@@ -45,8 +39,8 @@ const Header = () => {
                     <li>
                         <Link
                             to="/tools"
-                            style={linkStyles}
-                            activeStyle={activeStyles}
+                            className={headerStyles.link}
+                            activeClassName={headerStyles.active}
                         >
                             NARZĘDZIA
                         </Link>
@@ -54,8 +48,8 @@ const Header = () => {
                     <li>
                         <Link
                             to="/education"
-                            style={linkStyles}
-                            activeStyle={activeStyles}
+                            className={headerStyles.link}
+                            activeClassName={headerStyles.active}
                         >
                             KSZTAŁCENIE
                         </Link>
@@ -63,8 +57,8 @@ const Header = () => {
                     <li>
                         <Link
                             to="/spreading"
-                            style={linkStyles}
-                            activeStyle={activeStyles}
+                            className={headerStyles.link}
+                            activeClassName={headerStyles.active}
                         >
                             UPOWSZECHNIENIE
                         </Link>

@@ -1,6 +1,9 @@
 import React from 'react';
 
-import Header from './header';
+import Header from '../header/header';
+import Footer from '../footer/footer';
+
+import layoutStyles from './layout.module.css';
 
 const Layout = (props) => {
     return  (
@@ -9,6 +12,7 @@ const Layout = (props) => {
             <main>
                 {props.children}
             </main>
+            <Footer />
         </React.Fragment>
     )
 }
