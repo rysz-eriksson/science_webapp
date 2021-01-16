@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import Button from '@material-ui/core/Button';
+
 import headerStyles from './header.module.css';
 
 const Header = () => {
@@ -66,8 +68,8 @@ const Header = () => {
                 </ul>
             </nav>
             <section>
-                <button>PL</button>
-                <button>EN</button>
+                <Button variant="contained" color="primary">PL</Button>
+                <Button variant="contained" color="primary">EN</Button>
             </section>
         </header>
     )
