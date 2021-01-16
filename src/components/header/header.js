@@ -3,18 +3,17 @@ import { Link } from 'gatsby';
 
 import Button from '@material-ui/core/Button';
 
-import headerStyles from './header.module.css';
+import headerStyles from './header.module.scss';
 
 const Header = () => {
     return (
-        <header>
+        <header className={headerStyles.header}>
             <h1>Logo</h1>
             <nav>
                 <ul>
                     <li>
                         <Link
                             to="/about"
-                            className={headerStyles.link}
                             activeClassName={headerStyles.active}
                         >
                             O CENTRUM
@@ -23,7 +22,6 @@ const Header = () => {
                     <li>
                         <Link
                             to="/research"
-                            className={headerStyles.link}
                             activeClassName={headerStyles.active}
                         >
                             BADANIA
@@ -32,7 +30,6 @@ const Header = () => {
                     <li>
                         <Link
                             to="/onboarding"
-                            className={headerStyles.link}
                             activeClassName={headerStyles.active}
                         >
                             WDROŻENIE
@@ -41,7 +38,6 @@ const Header = () => {
                     <li>
                         <Link
                             to="/tools"
-                            className={headerStyles.link}
                             activeClassName={headerStyles.active}
                         >
                             NARZĘDZIA
@@ -50,7 +46,6 @@ const Header = () => {
                     <li>
                         <Link
                             to="/education"
-                            className={headerStyles.link}
                             activeClassName={headerStyles.active}
                         >
                             KSZTAŁCENIE
@@ -59,7 +54,6 @@ const Header = () => {
                     <li>
                         <Link
                             to="/spreading"
-                            className={headerStyles.link}
                             activeClassName={headerStyles.active}
                         >
                             UPOWSZECHNIENIE
