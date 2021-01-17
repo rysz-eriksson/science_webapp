@@ -1,0 +1,39 @@
+$bg-color: #20EFAF;
+$font-color: #FFFFFF;
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color;
+    position: fixed;
+    bottom: 0;
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    section {
+        text-align: left;
+        color: $font-color;
+    }
+    .logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2 {
+            width: 100%;
+        }
+        h2.cm {
+            background: url('../../images/logo-cbm.svg') center/cover no-repeat;
+            width: 93px;
+            height: 53px;
+        }
+        h2.uj {
+            background: url('../../images/logo-uj-white.svg') center/cover no-repeat;
+            height: 53px;
+        }
+    }
+}
