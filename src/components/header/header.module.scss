@@ -37,4 +37,23 @@ $font-color: #FFFFFF;
     .active {
         color: black;
     }
+    .buttons {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    button {
+        border-radius: 50%;
+        border: 1px white solid;
+        background-color: transparent;
+        color: $font-color;
+        padding: .5rem;
+        margin: .2rem;
+    }
+    .activeBtn {
+        font-weight: bold;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+        font-weight: bold;
+    }
 }
+
+
