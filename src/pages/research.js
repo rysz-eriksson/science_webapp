@@ -14,7 +14,9 @@ const Research = () => {
   return (
     <Layout>
         <Submenu links={research} />
-        <Section title={projects} />
+        <Section title={projects}>
+          <p>some stuff</p>
+        </Section>
         <Section title={pubs} />
         <Section title={confs} />
     </Layout>

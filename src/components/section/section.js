@@ -1,9 +1,18 @@
 import React from 'react';
 
-const Section = () => {
+import sectionStyles from './section.module.scss';
+
+const Section = ({title, children}) => {
     return (
-        <section>
-            
+        <section
+            key={title.en}
+            id={title.en}
+            className={sectionStyles.section}
+        >
+            <h2>
+                {title.pl}
+            </h2>
+            {children}
         </section>
     )
 };
