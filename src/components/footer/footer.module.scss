@@ -18,22 +18,31 @@ $font-color: #FFFFFF;
     section {
         text-align: left;
         color: $font-color;
+        p {
+            line-height: 0.5;
+            font-size: 12px;
+            font-weight: 500;
+
+        }
+        a {
+            text-decoration: none;
+            color: $font-color;
+        }
     }
     .logos {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         h2 {
-            width: 100%;
+            height: 56px;
         }
         h2.cm {
             background: url('../../images/logo-cbm.svg') center/cover no-repeat;
-            width: 93px;
-            height: 53px;
+            width: 100px;
         }
         h2.uj {
             background: url('../../images/logo-uj-white.svg') center/cover no-repeat;
-            height: 53px;
+            width: 220px;
         }
     }
 }

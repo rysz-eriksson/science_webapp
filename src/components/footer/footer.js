@@ -1,5 +1,8 @@
 import React from 'react';
 
+import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@material-ui/icons/Facebook';
+
 import footerStyles from './footer.module.scss';
 
 const Footer = () => {
@@ -24,17 +27,22 @@ const Footer = () => {
                 <h3>KONTAKT</h3>
                 <address>
                     <p>ul. Ingardena</p>
-                    <p>ul. Ingardena</p>
+                    <p>30-310 Kraków</p>
                     <p>
                         <a href="mailto:brain@uj.edu.pl">brain@uj.edu.pl</a>
                     </p>
                     <p>
                         <a href="tel:555555555">555 555 555</a>
                     </p>
-                </address>
                 <div>
-
+                    <a href="https://twitter.com/explore">
+                        <TwitterIcon />
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <FacebookIcon />
+                    </a>
                 </div>
+                </address>
                 <h3>PRACA</h3>
                 </section>
             </div>
