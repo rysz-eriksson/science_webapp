@@ -35,10 +35,10 @@ const Footer = () => {
                         <a href="tel:555555555">555 555 555</a>
                     </p>
                 <div>
-                    <a href="https://twitter.com/explore">
+                    <a href="https://twitter.com/explore" target="_blank">
                         <TwitterIcon />
                     </a>
-                    <a href="https://www.facebook.com/">
+                    <a href="https://www.facebook.com/" target="_blank">
                         <FacebookIcon />
                     </a>
                 </div>
