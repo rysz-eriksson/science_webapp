@@ -7,6 +7,8 @@ $font-color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: sticky;
+    top: 5rem;
     background-color: black;
     a {
         text-decoration: none;

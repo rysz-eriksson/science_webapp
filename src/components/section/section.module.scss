@@ -5,4 +5,14 @@ $font-color: #FFFFFF;
     height: 100vh;
     background-color: grey;
     color: $font-color;
+    margin-top: -8rem;
+    padding-top: 8rem;
+    // &::before {
+    //     display: block; 
+    //     content: " "; 
+    //     margin-top: -8rem; 
+    //     height: 8rem; 
+    //     visibility: hidden; 
+    //     pointer-events: none;
+    // }
 }

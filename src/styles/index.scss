@@ -4,4 +4,6 @@ $font-color: #FFFFFF;
 body {
     color: $font-color;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

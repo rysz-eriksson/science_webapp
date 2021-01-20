@@ -7,8 +7,7 @@ $font-color: #FFFFFF;
     justify-content: center;
     align-items: center;
     background-color: $bg-color;
-    position: fixed;
-    bottom: 0;
+    flex-shrink: 0;
 }
 
 .container {

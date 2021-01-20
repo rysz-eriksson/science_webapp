@@ -10,7 +10,7 @@ export default ({links}) => {
                 <ul>
                     {links.map((link) => (
                         <li>
-                            <Link 
+                            <Link
                                 to={"#" + link.en}
                                 activeClassName={submenuStyles.active}
                                 >

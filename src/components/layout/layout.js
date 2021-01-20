@@ -12,8 +12,8 @@ const Layout = (props) => {
     return  (
         <React.Fragment>
             <CssBaseline />
-                <Header />
-                <main>
+                <Header links={props.links} />
+                <main className={layoutStyles.main}>
                     {props.children}
                 </main>
             <Footer />
