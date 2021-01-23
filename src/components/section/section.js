@@ -10,7 +10,7 @@ const Section = ({title, children}) => {
             className={sectionStyles.section}
         >
             <h2>
-                {title.pl}
+                {title.pl.toUpperCase()}
             </h2>
             {children}
         </section>
