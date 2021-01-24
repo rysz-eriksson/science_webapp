@@ -6,37 +6,46 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 
+import image from '../../images/waves.jpg';
+
 const useStyles = makeStyles({
     card: {
-        backgroundColor: '@$bg-color',
-        color: '$font-color',
+        backgroundColor: '#20EFAF',
+        color: '#FFFFFF',
         width: '240px',
         height: '360px',
+        textAlign: 'end',
     },
     image: {
-        height: '120px',
+        height: '150px',
+    },
+    title: {
+        margin: '0',
+        textTransform: 'uppercase',
     },
     content: {
-        margin: '0.5rem',
         display: 'flex',
+        height: '210px',
         flexDirection: 'column',
-        justifyContent: 'space=between',
-        alignItems: 'flex-end'
+        justifyContent: 'space-between',
+    },
+    paragraph: {
+        margin: '0.3rem'
     }
 })
 
-const CustomCard = ({title, image, content}) => {
+const CustomCard = ({title, content}) => {
     const classes = useStyles();
     return (
         <CardActionArea>
             <Card className={classes.card}>
-                <CardMedia image={image} component="img" className={classes.image}/>
+                <CardMedia image={image} className={classes.image}/>
                 <CardContent className={classes.content}>
-                    <h3>
-                        {title.toUpperCase()}
-                    </h3>
+                    <h4 className={classes.title}>
+                        {title}
+                    </h4>
                     <div>
-                        {content.map(par => <p key={par.slice(-5)}>{par}</p>)}
+                        {content.map(par => <p key={par.slice(-5)} className={classes.paragraph}>{par}</p>)}
                     </div>
                 </CardContent>
             </Card>
