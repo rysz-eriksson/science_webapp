@@ -5,7 +5,7 @@ import Section from '../components/section/section';
 import CustomCard from '../components/card/card';
 
 import { sectionsInfo } from '../data/sections_info';
-import { projectsInfo } from '../data/cards_info';
+import { projectsInfo, conferencesInfo } from '../data/cards_info';
 
 import containerStyles from './research.module.scss';
 
@@ -29,10 +29,22 @@ const Research = () => {
               )
             })}
           </div>
-
         </Section>
         <Section title={pubs} />
-        <Section title={confs} />
+        <Section title={confs}>
+          <div className={containerStyles.container}>
+            {conferencesInfo.map(project => {
+              return (
+                <CustomCard
+                key={project.key}
+                title={project.title}
+                image={project.image}
+                content={project.content}
+              />
+              )
+            })}
+          </div>
+        </Section>
     </Layout>
   )
 };

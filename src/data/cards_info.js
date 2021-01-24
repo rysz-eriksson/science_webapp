@@ -33,6 +33,23 @@ export const projectsInfo = [{
     content: ['kierownik projektu:', 'mgr Patrycja Kałamała']
 },];
 
-export const conferencesInfo = {
-    
-};
+export const conferencesInfo = [
+    {
+        key: uuidv4(),
+        title: 'behawioralne i neuronalne wskaźniki hamowania reakcji w sytuacji konfliktu - badania populacji osób dwujęzycznych',
+        image: '../images/waves.jpg',
+        content: ['12-15.10.2021']
+    },
+    {
+        key: uuidv4(),
+        title: 'behawioralne i neuronalne wskaźniki hamowania reakcji w sytuacji konfliktu - badania populacji osób dwujęzycznych',
+        image: '../images/waves.jpg',
+        content: ['12-15.10.2021']
+    },
+    {
+        key: uuidv4(),
+        title: 'behawioralne i neuronalne wskaźniki hamowania reakcji w sytuacji konfliktu - badania populacji osób dwujęzycznych',
+        image: '../images/waves.jpg',
+        content: ['12-15.10.2021']
+    },
+];
