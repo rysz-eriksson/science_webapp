@@ -9,7 +9,7 @@ export default ({links}) => {
             <nav>
                 <ul>
                     {links.map((link) => (
-                        <li>
+                        <li key={link.en}>
                             <Link
                                 to={"#" + link.en}
                                 activeClassName={submenuStyles.active}

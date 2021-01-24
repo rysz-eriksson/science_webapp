@@ -5,7 +5,7 @@ import Section from '../components/section/section';
 import CustomCard from '../components/card/card';
 
 import { sectionsInfo } from '../data/sections_info';
-import { projects } from '../data/cards_data';
+import { projectsInfo } from '../data/cards_info';
 
 const Research = () => {
 
@@ -15,12 +15,16 @@ const Research = () => {
   return (
     <Layout links={research}>
         <Section title={projects}>
-
-          <CustomCard
-            title='Laluna'
-            image='../images/waves.jpg'
-            content='frfr'
-          />
+          {projectsInfo.map(project => {
+            return (
+              <CustomCard
+              key={project.key}
+              title={project.title}
+              image={project.image}
+              content={project.content}
+            />
+            )
+          })}
         </Section>
         <Section title={pubs} />
         <Section title={confs} />

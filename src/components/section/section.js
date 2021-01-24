@@ -5,7 +5,7 @@ import sectionStyles from './section.module.scss';
 const Section = ({title, children}) => {
     return (
         <section
-            key={title.en}
+            key={title.key}
             id={title.en}
             className={sectionStyles.section}
         >

@@ -30,7 +30,7 @@ const CustomCard = ({title, image, content}) => {
     return (
         <CardActionArea>
             <Card className={classes.card}>
-                <CardMedia image={image} className={classes.image}/>
+                <CardMedia image={image} component="img" className={classes.image}/>
                 <CardContent className={classes.content}>
                     <h3>
                         {title.toUpperCase()}
