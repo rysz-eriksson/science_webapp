@@ -7,6 +7,8 @@ import CustomCard from '../components/card/card';
 import { sectionsInfo } from '../data/sections_info';
 import { projectsInfo } from '../data/cards_info';
 
+import containerStyles from './research.module.scss';
+
 const Research = () => {
 
   const { research } = sectionsInfo;
@@ -15,16 +17,19 @@ const Research = () => {
   return (
     <Layout links={research}>
         <Section title={projects}>
-          {projectsInfo.map(project => {
-            return (
-              <CustomCard
-              key={project.key}
-              title={project.title}
-              image={project.image}
-              content={project.content}
-            />
-            )
-          })}
+          <div className={containerStyles.container}>
+            {projectsInfo.map(project => {
+              return (
+                <CustomCard
+                key={project.key}
+                title={project.title}
+                image={project.image}
+                content={project.content}
+              />
+              )
+            })}
+          </div>
+
         </Section>
         <Section title={pubs} />
         <Section title={confs} />

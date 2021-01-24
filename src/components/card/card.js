@@ -9,6 +9,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 import image from '../../images/waves.jpg';
 
 const useStyles = makeStyles({
+    action: {
+        width: 'fit-content',
+        margin: '0 0.5rem 1.5rem 0.5rem',
+    },
     card: {
         backgroundColor: '#20EFAF',
         color: '#FFFFFF',
@@ -37,7 +41,7 @@ const useStyles = makeStyles({
 const CustomCard = ({title, content}) => {
     const classes = useStyles();
     return (
-        <CardActionArea>
+        <CardActionArea className={classes.action}>
             <Card className={classes.card}>
                 <CardMedia image={image} className={classes.image}/>
                 <CardContent className={classes.content}>

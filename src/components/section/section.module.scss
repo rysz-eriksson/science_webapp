@@ -2,12 +2,12 @@ $bg-color: #20EFAF;
 $font-color: #FFFFFF;
 
 .section {
-    height: 100vh;
     background-color: $font-color;
     color: $font-color;
     margin-top: -8rem;
     padding-top: 8rem;
     background-clip: content-box;
+    overflow: hidden;
     &:nth-of-type(2n) {
         background-color: #f4f4f4;
     }
