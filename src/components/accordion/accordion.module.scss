@@ -1,0 +1,56 @@
+$bg-color: #20EFAF;
+$font-color: #FFFFFF;
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto 4rem auto;
+}
+
+.acc {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.summary {
+    color: $bg-color;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    h4 {
+        padding: 0 .5rem;
+    }
+    svg {
+        color: $bg-color;
+    }
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    p {
+        margin: 0;
+        padding: 0 0 2rem 7.5rem;
+        font-weight: bolder;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 12px;
+            width: 12px;
+            left: 5.8rem;
+            background-color: $font-color;
+            border: 5px solid $bg-color;
+            border-radius: 50%;
+            top: 4px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $bg-color;
+            height: 100%;
+            width: .15rem;
+            top: 10px;
+            left: 6rem;
+        }
+    }
+}

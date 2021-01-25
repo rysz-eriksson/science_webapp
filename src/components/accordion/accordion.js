@@ -6,18 +6,24 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+import accordionStyles from './accordion.module.scss';
+
 const CustomAccordion = ({articles}) => {
     return (
-        <div>
+        <div className={accordionStyles.container}>
             {articles.map(item => {
                 return (
-                    <Accordion key={item.year}>
+                    <Accordion 
+                        key={item.year}
+                        className={accordionStyles.acc}
+                    >
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
+                            className={accordionStyles.summary}
                         >
-                            <h5>{item.year}</h5>
+                            <h4>{item.year}</h4>
                         </AccordionSummary>
-                        <AccordionDetails>
+                        <AccordionDetails className={accordionStyles.details}>
                             {item.articles.map(article => {
                                 return (
                                     <p key={article.key}>{`${article.authors} (${article.year}). ${article.title}.`}</p>
