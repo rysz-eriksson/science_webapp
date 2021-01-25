@@ -3,9 +3,11 @@ import React from "react";
 import Layout from '../components/layout/layout';
 import Section from '../components/section/section';
 import CustomCard from '../components/card/card';
+import CustomAccordion from '../components/accordion/accordion';
 
 import { sectionsInfo } from '../data/sections_info';
 import { projectsInfo, conferencesInfo } from '../data/cards_info';
+import { articlesInfo } from '../data/accordion_info';
 
 import containerStyles from './research.module.scss';
 
@@ -30,7 +32,9 @@ const Research = () => {
             })}
           </div>
         </Section>
-        <Section title={pubs} />
+        <Section title={pubs}>
+            <CustomAccordion articles={articlesInfo}/>
+        </Section>
         <Section title={confs}>
           <div className={containerStyles.container}>
             {conferencesInfo.map(project => {

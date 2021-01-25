@@ -12,7 +12,6 @@ export default ({links}) => {
                         <li key={link.en}>
                             <Link
                                 to={"#" + link.en}
-                                activeClassName={submenuStyles.active}
                                 >
                                     {link.pl}
                                 </Link>
