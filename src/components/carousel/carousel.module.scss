@@ -1,0 +1,23 @@
+.slider {
+    height: 100%;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    div {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+    article {
+        background-color: black;
+    }
+}
+
+.caption {
+    background-color: black;
+}
+
