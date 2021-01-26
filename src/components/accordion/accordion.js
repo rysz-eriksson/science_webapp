@@ -8,12 +8,19 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 import accordionStyles from './accordion.module.scss';
 
+const useStyles = makeStyles({
+    expanded: {
+        minHeight: '18px',
+    }
+})
+
 const CustomAccordion = ({articles}) => {
     return (
         <div className={accordionStyles.container}>
-            {articles.map(item => {
+            {articles.map((item, index) => {
                 return (
                     <Accordion 
+                        defaultExpanded={index === 0}
                         key={item.year}
                         className={accordionStyles.acc}
                     >
@@ -21,7 +28,11 @@ const CustomAccordion = ({articles}) => {
                             expandIcon={<ExpandMoreIcon />}
                             className={accordionStyles.summary}
                         >
-                            <h4>{item.year}</h4>
+                            <h4
+                            className={index === articles.length - 1 ? accordionStyles.lastTitle : undefined}
+                            >
+                                {item.year}
+                            </h4>
                         </AccordionSummary>
                         <AccordionDetails className={accordionStyles.details}>
                             {item.articles.map(article => {

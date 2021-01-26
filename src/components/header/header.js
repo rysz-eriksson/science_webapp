@@ -71,7 +71,7 @@ const Header = ({links}) => {
                     </button>
                 </div>
             </div>
-            <Submenu links={links} />
+            {links && <Submenu links={links} />}
         </header>
     )
 };
