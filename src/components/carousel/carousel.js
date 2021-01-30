@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, Image } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, DotGroup, Image } from 'pure-react-carousel';
 
 import image from '../../images/building.jpg';
 
@@ -10,9 +10,11 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 const CustomCarousel = ({content}) => {
     return (
         <CarouselProvider
-            naturalSlideWidth={10}
-            naturalSlideHeight={10}
+            naturalSlideWidth={8}
+            naturalSlideHeight={5}
             totalSlides={content.length}
+            interval={2000}
+            className={crsStyles.carousel}
         >
             <Slider className={crsStyles.slider}>
                 {content.map((item, i) => {
@@ -22,19 +24,18 @@ const CustomCarousel = ({content}) => {
                             index={i}
                             className={crsStyles.slide}
                         >
-                            <Image 
-                                src={image}
-                            />
                             <article>
                                 <h2>{item.title}</h2>
                                 <p>{item.description}</p>
                             </article>
+                            <Image 
+                                src={image}
+                            />
                         </Slide>
                     )
                 })}
             </Slider>
-            <ButtonBack>Back</ButtonBack>
-            <ButtonNext>Next</ButtonNext>
+            <DotGroup className={crsStyles.dotGroup}></DotGroup>
         </CarouselProvider>
     )
 }

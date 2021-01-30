@@ -13,7 +13,7 @@ const Layout = (props) => {
         <React.Fragment>
             <CssBaseline />
                 <Header links={props.links} />
-                <main className={layoutStyles.main}>
+                <main className={props.links ? layoutStyles.main : layoutStyles.mainNoSub}>
                     {props.children}
                 </main>
             <Footer />
