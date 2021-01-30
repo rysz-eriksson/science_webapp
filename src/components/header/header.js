@@ -3,13 +3,22 @@ import { Link } from 'gatsby';
 
 import Submenu from '../sub_menu/sub_menu';
 
+import logo from '../../images/logo-cbm.svg';
+
 import headerStyles from './header.module.scss';
 
 const Header = ({links}) => {
     return (
         <header className={headerStyles.container}>
             <div className={headerStyles.header}>
-                <h1></h1>
+                <div className={headerStyles.logo}>
+                    <Link to="/">
+                        <img
+                            src={logo}
+                            alt='logo'
+                        />
+                    </Link>
+                </div>
                 <nav>
                     <ul>
                         <li>

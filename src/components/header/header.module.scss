@@ -15,12 +15,6 @@ $font-color: #FFFFFF;
     align-items: center;
     background-color: $bg-color;
     padding: 0 2rem;
-    h1 {
-        background: url('../../images/logo-cbm.svg') center/cover no-repeat;
-        width: 100px;
-        height: 53px;
-        margin-left: 4rem;
-    }
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -58,6 +52,18 @@ $font-color: #FFFFFF;
         font-weight: bold;
         background-color: rgba($color: #ffffff, $alpha: 0.5);
         font-weight: bold;
+    }
+}
+
+.logo {
+    width: 100px;
+    height: 53px;
+    margin-left: 4rem;
+    a {
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
