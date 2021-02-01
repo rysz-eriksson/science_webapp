@@ -13,7 +13,9 @@ const CustomCarousel = ({content}) => {
             naturalSlideWidth={8}
             naturalSlideHeight={5}
             totalSlides={content.length}
-            interval={2000}
+            isPlaying={true}
+            interval={3000}
+            infinite={true}
             className={crsStyles.carousel}
         >
             <Slider className={crsStyles.slider}>
