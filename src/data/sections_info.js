@@ -89,3 +89,30 @@ export const sectionsInfo = {
         },
     ],
 };
+
+export const mainMenuInfo = [
+    {
+        pl: 'o centrum',
+        en: 'about'
+    },
+    {
+        pl: 'badania',
+        en: 'research'
+    },
+    {
+        pl: 'wsrożenie',
+        en: 'onboarding'
+    },
+    {
+        pl: 'narzędzia',
+        en: 'tools'
+    },
+    {
+        pl: 'kształcenie',
+        en: 'education'
+    },
+    {
+        pl: 'upowszechnienie',
+        en: 'spreading'
+    },
+]
