@@ -17,9 +17,6 @@ $font-color: #FFFFFF;
         font-weight: 500;
         padding: 0 .4rem;
     }
-    .active {
-        color: black;
-    }
     nav {
         margin-right: 4rem;
         ul {
@@ -34,4 +31,8 @@ $font-color: #FFFFFF;
             }
         }
     }
+}
+
+.active {
+    color: black;
 }

@@ -2,14 +2,12 @@ import React from "react";
 
 import Layout from '../components/layout/layout';
 import Section from '../components/section/section';
-import CustomCard from '../components/card/card';
+import CardContainer from '../components/card_container/card_container';
 import CustomAccordion from '../components/accordion/accordion';
 
 import { sectionsInfo } from '../data/sections_info';
 import { projectsInfo, conferencesInfo } from '../data/cards_info';
 import { articlesInfo } from '../data/accordion_info';
-
-import containerStyles from './research.module.scss';
 
 const Research = () => {
 
@@ -19,35 +17,13 @@ const Research = () => {
   return (
     <Layout links={research}>
         <Section title={projects}>
-          <div className={containerStyles.container}>
-            {projectsInfo.map(project => {
-              return (
-                <CustomCard
-                key={project.key}
-                title={project.title}
-                image={project.image}
-                content={project.content}
-              />
-              )
-            })}
-          </div>
+          <CardContainer content={projectsInfo} />
         </Section>
         <Section title={pubs}>
             <CustomAccordion articles={articlesInfo}/>
         </Section>
         <Section title={confs}>
-          <div className={containerStyles.container}>
-            {conferencesInfo.map(project => {
-              return (
-                <CustomCard
-                key={project.key}
-                title={project.title}
-                image={project.image}
-                content={project.content}
-              />
-              )
-            })}
-          </div>
+        <CardContainer content={conferencesInfo} />
         </Section>
     </Layout>
   )

@@ -26,13 +26,14 @@ const Header = ({links}) => {
                     <ul>
                         {mainMenuInfo.map((link) => {
                             return (
-                                <Link
-                                    key={link.en}
-                                    to={`/${link.en}`}
-                                    className={page === link.en ? headerStyles.active : undefined}
-                                >
-                                    {link.pl}
-                                </Link>
+                                <li key={link.en}>
+                                    <Link
+                                        to={`/${link.en}`}
+                                        className={page === link.en ? headerStyles.active : undefined}
+                                    >
+                                        {link.pl}
+                                    </Link>
+                                </li>
                             )
                         })}
                     </ul>
