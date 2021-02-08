@@ -100,7 +100,7 @@ export const mainMenuInfo = [
         en: 'research'
     },
     {
-        pl: 'wsrożenie',
+        pl: 'wdrożenie',
         en: 'onboarding'
     },
     {
