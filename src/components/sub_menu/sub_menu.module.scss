@@ -1,24 +1,35 @@
+@font-face {
+    font-family: 'HKGrotest';
+    src: url('../../fonts/HKGrotesk-Regular.otf') format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
 $bg-color: #20EFAF;
 $font-color: #FFFFFF;
 
 .submenu {
     width: 100%;
-    height: 3rem;
+    height: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: sticky;
-    top: 5rem;
+    top: 70px;
     background-color: black;
+    padding: 0 20rem;
     a {
         text-decoration: none;
+        font-family: 'HKGrotest';
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: uppercase;
         color: $font-color;
         letter-spacing: 0.2rem;
-        font-weight: 500;
         padding: 0 .4rem;
     }
     nav {
-        margin-right: 4rem;
+        margin-right: 10rem;
         ul {
             display: flex;
             flex-wrap: wrap;

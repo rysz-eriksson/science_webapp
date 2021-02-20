@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'HKGrotest-Black';
+    src: url('../../fonts/HKGrotesk-Black.otf') format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'HKGrotest';
+    src: url('../../fonts/HKGrotesk-SemiBold.otf') format('otf');
+    font-style: normal;
+    font-weight: 600;
+}
+
 $bg-color: #20EFAF;
 $font-color: #FFFFFF;
 
@@ -9,12 +23,12 @@ $font-color: #FFFFFF;
 }
 .header {
     width: 100%;
-    height: 5rem;
+    height: 70px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: $bg-color;
-    padding: 0 2rem;
+    background-image: linear-gradient(-268deg, #20efaf 0%, #36b29a 88%, #36b29a 100%);
+    padding: 0 5rem;
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -29,9 +43,12 @@ $font-color: #FFFFFF;
     a {
         text-decoration: none;
         color: $font-color;
+        font-family: 'HKGrotesk-Black';
+        font-weight: 400;
+        font-size: 14px;
         letter-spacing: 0.2rem;
+        line-height: 27px;
         text-transform: uppercase;
-        font-weight: 500;
         padding: 0 .4rem;
     }
     .active {
@@ -57,8 +74,8 @@ $font-color: #FFFFFF;
 }
 
 .logo {
-    width: 100px;
-    height: 53px;
+    width: 139px;
+    height: 46px;
     margin-left: 4rem;
     a {
         img {

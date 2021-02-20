@@ -1,27 +1,37 @@
 import React from 'react';
 
-import TwitterIcon from '@material-ui/icons/Twitter';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import logoCBM from '../../images/logo-cbm-vertical.svg'
+import logoUJ from '../../images/logo-uj\.svg';
+
 
 import footerStyles from './footer.module.scss';
 
 const Footer = () => {
     return (
-        <footer className={footerStyles.footer}>
+        <footer>
+            <div className={footerStyles.footer}>
             <div className={footerStyles.container}>
                 <section className={footerStyles.logos}>
-                    <h2 className={footerStyles.cm}></h2>
-                    <h2 className={footerStyles.uj}></h2>
+                    <img 
+                        className={footerStyles.cm} 
+                        src={logoCBM}
+                        alt='logo cbm'
+                    />
+                    <img 
+                        className={footerStyles.uj} 
+                        src={logoUJ}
+                        alt='logo uj'
+                    />
                 </section>
                 <section>
                     <h3>FUNDATORZY</h3>
-                    <p>Katedra Filologii Romańskiej UJ-CM</p>
-                    <p>Katedra Filologii Romańskiej UJ-CM</p>
-                    <p>Katedra Filologii Romańskiej UJ-CM</p>
-                    <p>Katedra Filologii Romańskiej UJ-CM</p>
-                    <p>Katedra Filologii Romańskiej UJ-CM</p>
-                    <p>Katedra Filologii Romańskiej UJ-CM</p>
-                    <p>Katedra Filologii Romańskiej UJ-CM</p>
+                    <p>Katedra Neurologii UJ-CM</p>
+                    <p>Instytut Psychologii UJ</p>
+                    <p>Katedra Radiologii UJ-CM</p>
+                    <p>Katedra Kardiologii UJ-CM</p>
+                    <p>Katedra Psychiatrii UJ-CM</p>
+                    <p>Zakład Kognitywistyki Instytutu Filozofii UJ</p>
+                    <p>Instytut Psychologii Stosowanej UJ/Grupa Badawcza Neuroobrazowania MCB</p>
                 </section>
                 <section>
                 <h3>KONTAKT</h3>
@@ -34,18 +44,17 @@ const Footer = () => {
                     <p>
                         <a href="tel:555555555">555 555 555</a>
                     </p>
-                <div>
-                    <a href="https://twitter.com/explore" target="_blank">
-                        <TwitterIcon />
-                    </a>
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <FacebookIcon />
-                    </a>
-                </div>
                 </address>
+                <div className={footerStyles.social} >
+                    <a href="https://twitter.com/explore" target="_blank"></a>
+                    <a href="https://www.facebook.com/" target="_blank"></a>
+                    <a href="mailto:brain@uj.edu.pl" target="_blank"></a>
+                </div>
                 <h3>PRACA</h3>
                 </section>
             </div>
+        </div>
+        <div className={footerStyles.blackBox}></div>
         </footer>
     )
 };
