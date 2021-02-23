@@ -1,7 +1,22 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../../fonts/Nunito-ExtraBold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'HKGrotest-Black';
+    src: url('../../fonts/HKGrotesk-Black.otf') format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
 $bg-color: #20EFAF;
+$font-color: #FFFFFF;
 
 .carousel {
-    height: calc(100vh - 292.5px);
+    height: calc(100vh - 290px);
     position: relative;
 }
 
@@ -13,22 +28,55 @@ $bg-color: #20EFAF;
 .slide {
     div {
         display: flex;
-
+        img {
+            max-width: 50%;
+        }
     }
-    article {
+    section {
         background-color: black;
-        max-width: 45%;
-        padding: 3rem;
+        width: 50%;
+        height: calc(100vh - 290px);
+        padding: 20% 5% 0 5%;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         text-align: end;
         overflow: hidden;
-        h2 {
-            text-transform: uppercase;
-        }
-        p {
-            max-width: 60%;
+        article {
+            width: 80%;
+            margin: 0 auto 20% auto;
+            h2 {
+                text-transform: uppercase;
+                font-family: 'HKGrotest-Black', sans-serif;
+                font-size: 18px;
+                letter-spacing: .1rem;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: $font-color;
+                    height: 2px;
+                    width: calc(135% + 15px);
+                    bottom: -3px;
+                    right: -15px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: $font-color;
+                    bottom: -8px;
+                    right: -17px;
+                    border: 6px solid $font-color;
+                    border-radius: 50%;
+                }
+            }
+            p {
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                font-size: 1rem;
+                letter-spacing: .1rem;
+                text-align: justify;
+                line-height: 24px;
+            }
         }
     }
 }

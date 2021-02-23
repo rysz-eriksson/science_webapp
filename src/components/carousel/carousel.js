@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CarouselProvider, Slider, Slide, DotGroup, Image } from 'pure-react-carousel';
 
-import image from '../../images/building.jpg';
+import image from '../../images/slider-image.png';
 
 import crsStyles from './carousel.module.scss';
 import 'pure-react-carousel/dist/react-carousel.es.css';
@@ -26,10 +26,12 @@ const CustomCarousel = ({content}) => {
                             index={i}
                             className={crsStyles.slide}
                         >
-                            <article>
-                                <h2>{item.title}</h2>
-                                <p>{item.description}</p>
-                            </article>
+                            <section>
+                                <article>
+                                    <h2>{item.title}</h2>
+                                    <p>{item.description}</p>
+                                </article>
+                            </section>
                             <Image 
                                 src={image}
                             />

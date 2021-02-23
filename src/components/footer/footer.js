@@ -24,7 +24,7 @@ const Footer = () => {
                     />
                 </section>
                 <section>
-                    <h3>FUNDATORZY</h3>
+                    <h4>FUNDATORZY</h4>
                     <p>Katedra Neurologii UJ-CM</p>
                     <p>Instytut Psychologii UJ</p>
                     <p>Katedra Radiologii UJ-CM</p>
@@ -34,7 +34,7 @@ const Footer = () => {
                     <p>Instytut Psychologii Stosowanej UJ/Grupa Badawcza Neuroobrazowania MCB</p>
                 </section>
                 <section>
-                <h3>KONTAKT</h3>
+                <h4>KONTAKT</h4>
                 <address>
                     <p>ul. Ingardena</p>
                     <p>30-310 Kraków</p>
@@ -50,7 +50,7 @@ const Footer = () => {
                     <a href="https://www.facebook.com/" target="_blank"></a>
                     <a href="mailto:brain@uj.edu.pl" target="_blank"></a>
                 </div>
-                <h3>PRACA</h3>
+                <h4>PRACA</h4>
                 </section>
             </div>
         </div>

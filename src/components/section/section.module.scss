@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'HKGrotest-Black';
+    src: url('../../fonts/HKGrotesk-Black.otf') format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
 $bg-color: #20EFAF;
 $font-color: #FFFFFF;
 
@@ -12,7 +19,30 @@ $font-color: #FFFFFF;
         background-color: #f9f9fc;
     }
     h2 {
-        color: black;
-        margin: 3rem 0 3rem 5rem;
+        color: #020001;
+        font-family: 'HKGrotest-Black', sans-serif;
+        margin: 3rem 0 3rem 0;
+        width: fit-content;
+        padding-left: 30%;
+        font-size: 18px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $bg-color;
+            height: 2px;
+            width: calc(100% + 15px);
+            bottom: -3px;
+            right: -15px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $bg-color;
+            bottom: -8px;
+            right: -17px;
+            border: 6px solid $bg-color;
+            border-radius: 50%;
+        }
     }
 }

@@ -17,7 +17,6 @@ $font-color: #FFFFFF;
     position: sticky;
     top: 70px;
     background-color: black;
-    padding: 0 20rem;
     a {
         text-decoration: none;
         font-family: 'HKGrotest', sans-serif;
@@ -29,7 +28,8 @@ $font-color: #FFFFFF;
         padding: 0 .4rem;
     }
     nav {
-        margin-right: 10rem;
+        margin: 0 auto;
+        padding-left: 30%;
         ul {
             display: flex;
             flex-wrap: wrap;
