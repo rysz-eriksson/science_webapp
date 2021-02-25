@@ -10,10 +10,12 @@ const Section = ({title, children}) => {
             key={title.key}
             id={title.en}
             className={sectionStyles.section}
-        >
-            <h2>
-                {title.pl.toUpperCase()}
-            </h2>
+        >   
+            <div className={sectionStyles.titleContainer}>
+                <h2>
+                    {title.pl.toUpperCase()}
+                </h2>
+            </div>
             {children}
             <div className={sectionStyles.button}>
                 <ShareButton />
