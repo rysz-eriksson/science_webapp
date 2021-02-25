@@ -16,7 +16,7 @@ const Layout = (props) => {
                 <main className={props.links ? layoutStyles.main : layoutStyles.mainNoSub}>
                     {props.children}
                 </main>
-            <Footer />
+            <Footer links={props.links}/>
         </React.Fragment>
     )
 }

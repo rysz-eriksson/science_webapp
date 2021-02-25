@@ -6,10 +6,10 @@ import logoUJ from '../../images/logo-uj\.svg';
 
 import footerStyles from './footer.module.scss';
 
-const Footer = () => {
+const Footer = ({links}) => {
     return (
         <footer>
-            <div className={footerStyles.footer}>
+            <div className={links ? footerStyles.footer : footerStyles.noDisplay}>
             <div className={footerStyles.container}>
                 <section className={footerStyles.logos}>
                     <img 
@@ -54,7 +54,11 @@ const Footer = () => {
                 </section>
             </div>
         </div>
-        <div className={footerStyles.blackBox}></div>
+        <div 
+            className={footerStyles.blackBox}
+            className={links ? footerStyles.blackBox : footerStyles.greenBox}
+        >
+        </div>
         </footer>
     )
 };

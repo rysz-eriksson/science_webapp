@@ -10,13 +10,16 @@ $font-color: #FFFFFF;
 
 .footer {
     width: 100%;
-    max-height: 280px;
-    height: fit-content;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(-268deg, #20efaf 0%, #36b29a 88%, #36b29a 100%);
     flex-shrink: 0;
+}
+
+.noDisplay {
+    display: none;
 }
 
 .container {
@@ -83,4 +86,10 @@ $font-color: #FFFFFF;
     width: 100%;
     height: 74px;
     background-color: black;
+}
+
+.greenBox {
+    width: 100%;
+    height: 74px;
+    background-image: linear-gradient(-268deg, #20efaf 0%, #36b29a 88%, #36b29a 100%);
 }
