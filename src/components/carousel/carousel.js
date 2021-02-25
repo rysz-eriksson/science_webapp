@@ -2,8 +2,6 @@ import React from 'react';
 
 import { CarouselProvider, Slider, Slide, DotGroup, Image } from 'pure-react-carousel';
 
-import image from '../../images/slider-image.png';
-
 import crsStyles from './carousel.module.scss';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -33,7 +31,7 @@ const CustomCarousel = ({content}) => {
                                 </article>
                             </section>
                             <Image 
-                                src={image}
+                                src={item.image}
                             />
                         </Slide>
                     )

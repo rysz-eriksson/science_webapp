@@ -5,7 +5,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 
-import image from '../../images/tools.jpg';
+import image from '../../images/tools.png';
 
 import cardStyles from './card.module.scss';
 
