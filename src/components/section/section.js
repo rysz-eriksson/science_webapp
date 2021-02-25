@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ShareButton from '../share_button/share_button';
+
 import sectionStyles from './section.module.scss';
 
 const Section = ({title, children}) => {
@@ -13,6 +15,9 @@ const Section = ({title, children}) => {
                 {title.pl.toUpperCase()}
             </h2>
             {children}
+            <div className={sectionStyles.button}>
+                <ShareButton />
+            </div>
         </section>
     )
 };
