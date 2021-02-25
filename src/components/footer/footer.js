@@ -25,13 +25,13 @@ const Footer = ({links}) => {
                 </section>
                 <section>
                     <h4>FUNDATORZY</h4>
-                    <p>Katedra Neurologii UJ-CM</p>
-                    <p>Instytut Psychologii UJ</p>
-                    <p>Katedra Radiologii UJ-CM</p>
-                    <p>Katedra Kardiologii UJ-CM</p>
-                    <p>Katedra Psychiatrii UJ-CM</p>
-                    <p>Zakład Kognitywistyki Instytutu Filozofii UJ</p>
-                    <p>Instytut Psychologii Stosowanej UJ/Grupa Badawcza Neuroobrazowania MCB</p>
+                    <p><a href="http://www.neurologia.wl.uj.edu.pl" target="_blank">Katedra Neurologii UJ-CM</a></p>
+                    <p><a href="https://psychologia.uj.edu.pl" target="_blank">Instytut Psychologii UJ</a></p>
+                    <p><a href="http://www.radiologia.wl.cm.uj.edu.pl/" target="_blank">Katedra Radiologii UJ-CM</a></p>
+                    <p><a href="http://www.ikard.cm-uj.krakow.pl" target="_blank">Katedra Kardiologii UJ-CM</a></p>
+                    <p><a href="https://katedrapsychiatrii.wl.cm.uj.edu.pl" target="_blank">Katedra Psychiatrii UJ-CM</a></p>
+                    <p><a href="https://filozofia.uj.edu.pl/zaklad-kognitywistyki" target="_blank">Zakład Kognitywistyki Instytutu Filozofii UJ</a></p>
+                    <p><a href="https://mcb.uj.edu.pl/grupa-badawcza-neuroobrazowania" target="_blank">Instytut Psychologii Stosowanej UJ/Grupa Badawcza Neuroobrazowania MCB</a></p>
                 </section>
                 <section>
                 <h4>KONTAKT</h4>

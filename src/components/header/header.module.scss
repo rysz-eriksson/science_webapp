@@ -25,18 +25,30 @@ $font-color: #FFFFFF;
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-image: linear-gradient(-268deg, #20efaf 0%, #36b29a 88%, #36b29a 100%);
-    padding: 0 5rem;
-    ul {
+    .inner-container {
+        margin: 0 auto;
         display: flex;
-        flex-wrap: wrap;
-        list-style-type: none;
-        li {
-            border-right: 1px solid white;
-            &:last-of-type {
-            border: none;
+        align-items: center;
+        justify-content: space-between;
+        nav {
+            margin-left: 90px;
+            margin-right: 50px;
+            display: flex;
+            justify-content: flex-end;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                padding: 0;
+                li {
+                    border-right: 1px solid white;
+                    &:last-of-type {
+                    border: none;
+                    }
+                }
             }
         }
     }
@@ -60,6 +72,8 @@ $font-color: #FFFFFF;
     }
     button {
         border-radius: 50%;
+        width: 35px;
+        height: 35px;
         border: 1px white solid;
         background-color: transparent;
         color: $font-color;
@@ -76,7 +90,7 @@ $font-color: #FFFFFF;
 .logo {
     width: 139px;
     height: 46px;
-    margin-left: 4rem;
+    margin-left: 90px;
     a {
         img {
             width: 100%;

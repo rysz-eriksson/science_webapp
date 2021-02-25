@@ -28,12 +28,13 @@ $font-color: #FFFFFF;
         padding: 0 .4rem;
     }
     nav {
+        width: 1070px;
         margin: 0 auto;
-        padding-left: 30%;
         ul {
             display: flex;
             flex-wrap: wrap;
             list-style-type: none;
+            justify-content: flex-end;
             li {
                 border-right: 1px solid white;
                 &:last-of-type {

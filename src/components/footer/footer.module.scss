@@ -27,14 +27,20 @@ $font-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     section {
+        &:last-of-type {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         text-align: left;
         color: $font-color;
+        margin: 0 10px;
         p {
-            line-height: 0.7;
             font-family: 'Nunito', sans-serif;
             font-size: 13px;
             font-weight: 400;
             letter-spacing: normal;
+            margin: 5px 0;
         }
         a {
             text-decoration: none;
@@ -42,6 +48,7 @@ $font-color: #FFFFFF;
         }
         h4 {
             font-size: 1rem;
+            margin: 20px 0;
         }
     }
     .logos {

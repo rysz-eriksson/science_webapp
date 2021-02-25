@@ -14,37 +14,39 @@ const Header = ({links}) => {
     return (
         <header className={headerStyles.container}>
             <div className={headerStyles.header}>
-                <div className={headerStyles.logo}>
-                    <Link to="/">
-                        <img
-                            src={logo}
-                            alt='logo'
-                        />
-                    </Link>
-                </div>
-                <nav>
-                    <ul>
-                        {mainMenuInfo.map((link) => {
-                            return (
-                                <li key={link.en}>
-                                    <Link
-                                        to={`/${link.en}`}
-                                        className={page === link.en ? headerStyles.active : undefined}
-                                    >
-                                        {link.pl}
-                                    </Link>
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </nav>
-                <div className={headerStyles.buttons}>
-                    <button className={headerStyles.activeBtn}>
-                        PL
-                    </button>
-                    <button>
-                        EN
-                    </button>
+                <div className={headerStyles.innerContainer}>
+                    <div className={headerStyles.logo}>
+                        <Link to="/">
+                            <img
+                                src={logo}
+                                alt='logo'
+                            />
+                        </Link>
+                    </div>
+                    <nav>
+                        <ul>
+                            {mainMenuInfo.map((link) => {
+                                return (
+                                    <li key={link.en}>
+                                        <Link
+                                            to={`/${link.en}`}
+                                            className={page === link.en ? headerStyles.active : undefined}
+                                        >
+                                            {link.pl}
+                                        </Link>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </nav>
+                    <div className={headerStyles.buttons}>
+                        <button className={headerStyles.activeBtn}>
+                            PL
+                        </button>
+                        <button>
+                            EN
+                        </button>
+                    </div>
                 </div>
             </div>
             {links && <Submenu links={links} />}
