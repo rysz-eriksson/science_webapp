@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'HKGrotest';
-    src: url('../../fonts/HKGrotesk-SemiBold.otf') format('otf');
+    src: url('../../fonts/HKGrotesk-Regular.otf') format('otf');
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 @font-face {
@@ -29,7 +29,8 @@ $font-color: #FFFFFF;
     border-radius: 0;
     text-align: end;
     font-family: 'HK Grotesk', sans-serif;
-    letter-spacing: 0.1rem;
+    font-weight: 700;
+    letter-spacing: normal;
     font-size: 12px;
     line-height: 22px;
     
@@ -53,8 +54,10 @@ $font-color: #FFFFFF;
 }
 .paragraph {
     font-family: 'Nunito', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 700;
     line-height: 22px;
+    letter-spacing: normal;
     margin-block-start: unset;
     margin-block-end: unset;
 }

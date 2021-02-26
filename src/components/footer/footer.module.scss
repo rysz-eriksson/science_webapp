@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'HKGrotest-Black';
+    src: url('../../fonts/HKGrotesk-Black.otf') format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
     font-family: 'Nunito';
     src: url('../../fonts/Nunito-Regular.ttf') format('ttf');
     font-style: normal;
@@ -39,6 +46,7 @@ $font-color: #FFFFFF;
             font-family: 'Nunito', sans-serif;
             font-size: 13px;
             font-weight: 400;
+            line-height: 20px;
             letter-spacing: normal;
             margin: 5px 0;
         }
@@ -47,7 +55,12 @@ $font-color: #FFFFFF;
             color: $font-color;
         }
         h4 {
-            font-size: 1rem;
+            font-family: 'HKGrotesk-Black', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 2.8px;
+            line-height: 27px;
             margin: 20px 0;
         }
     }
