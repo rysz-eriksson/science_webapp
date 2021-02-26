@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../../fonts/Nunito-Regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
 $bg-color: #20EFAF;
 $font-color: #FFFFFF;
 
@@ -62,6 +69,11 @@ $font-color: #FFFFFF;
     padding: 0;
     p {
         margin: 0;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: normal;
+        line-height: 23px;
         text-align: justify;
         padding: 0 0 2rem 7.5rem;
         font-weight: bolder;
