@@ -7,22 +7,22 @@ import SectionTitle from '../components/section_title/section_title';
 import { sectionsInfo } from '../data/sections_info';
 import {carouselInfo} from '../data/carousel_info';
 
-const Education = () => {
-  const { education } = sectionsInfo;
-  const [cognes, internship] = education;
-  const secTitleInfo = carouselInfo[4]
+const Dissemination = () => {
+  const { dissemination } = sectionsInfo;
+  const [media, lectures] = dissemination;
+  const secTitleInfo = carouselInfo[5]
 
   return (
-    <Layout links={education}>
+    <Layout links={dissemination}>
         <SectionTitle info={secTitleInfo}/>
-        <Section title={cognes}>
+        <Section title={media}>
 
         </Section>
-        <Section title={internship}>
+        <Section title={lectures}>
 
         </Section>
     </Layout>
   )
 };
 
-export default Education;
+export default Dissemination;

@@ -40,7 +40,7 @@ export const sectionsInfo = {
             key: uuidv4(),  
         },
     ],
-    onboarding: [     
+    transfer: [     
         {
             pl: 'projekty aplikacyjne',
             en: 'application projects',
@@ -52,7 +52,7 @@ export const sectionsInfo = {
             key: uuidv4(),    
         },
     ],
-    tools: [
+    equipment: [
         {
             pl: 'rezonans magnetyczny',
             en: 'MRI',
@@ -64,7 +64,7 @@ export const sectionsInfo = {
             key: uuidv4(),    
         },
     ],
-    education: [
+    training: [
         {
             pl: 'cognes',
             en: 'cognes',
@@ -76,7 +76,7 @@ export const sectionsInfo = {
             key: uuidv4(),    
         },
     ],
-    spreading: [
+    dissemination: [
         {
             pl: 'w mediach',
             en: 'media',
@@ -101,18 +101,18 @@ export const mainMenuInfo = [
     },
     {
         pl: 'wdrożenie',
-        en: 'onboarding'
+        en: 'transfer'
     },
     {
         pl: 'narzędzia',
-        en: 'tools'
+        en: 'equipment'
     },
     {
         pl: 'kształcenie',
-        en: 'education'
+        en: 'training'
     },
     {
         pl: 'upowszechnienie',
-        en: 'spreading'
+        en: 'dissemination'
     },
 ]

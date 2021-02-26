@@ -16,7 +16,6 @@ $bg-color: #20EFAF;
 $font-color: #FFFFFF;
 
 .title {
-    // background: url('../../images/slider-image.png') center / cover no-repeat;
     width: 790px;
     height: 400px;
     margin: 195px auto 35px auto;
@@ -24,8 +23,8 @@ $font-color: #FFFFFF;
     justify-content: center;
     align-items: center;
     article {
-        width: 70%;
-        margin-right: 10%;
+        margin-left: 90px;
+        margin-right: 220px;
         h2 {
             text-transform: uppercase;
             font-family: 'HKGrotest-Black', sans-serif;
@@ -39,7 +38,7 @@ $font-color: #FFFFFF;
                 position: absolute;
                 background-color: $font-color;
                 height: 2px;
-                width: calc(115% + 15px);
+                width: calc(120% + 15px);
                 bottom: -2px;
                 right: -15px;
             }

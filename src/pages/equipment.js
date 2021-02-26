@@ -7,22 +7,22 @@ import SectionTitle from '../components/section_title/section_title';
 import { sectionsInfo } from '../data/sections_info';
 import {carouselInfo} from '../data/carousel_info';
 
-const Spreading = () => {
-  const { spreading } = sectionsInfo;
-  const [media, lectures] = spreading;
-  const secTitleInfo = carouselInfo[5]
+const Equipment = () => {
+  const { equipment } = sectionsInfo;
+  const [mri, spectroscopy] = equipment;
+  const secTitleInfo = carouselInfo[3]
 
   return (
-    <Layout links={spreading}>
+    <Layout links={equipment}>
         <SectionTitle info={secTitleInfo}/>
-        <Section title={media}>
+        <Section title={mri}>
 
         </Section>
-        <Section title={lectures}>
+        <Section title={spectroscopy}>
 
         </Section>
     </Layout>
   )
 };
 
-export default Spreading;
+export default Equipment;

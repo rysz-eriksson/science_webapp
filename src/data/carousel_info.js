@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
 import about from '../images/about-centre.jpg';
-import education from '../images/education.png';
-import onboarding from '../images/onboarding.jpg';
-import spreading from '../images/spreading.jpg';
-import tools from '../images/tools.png';
+import training from '../images/training.png';
+import transfer from '../images/transfer.jpg';
+import dissemination from '../images/dissemination.jpg';
+import equipment from '../images/equipment.png';
 import research from '../images/research.jpg';
 
 export const carouselInfo = [
@@ -21,25 +21,25 @@ export const carouselInfo = [
     },
     {
         key: uuidv4(),
-        image: onboarding,
+        image: transfer,
         title: 'wdrożenie',
         description: 'Esse in magna est sunt. Occaecat labore non ipsum esse veniam cillum aliqua consectetur non ut deserunt. Ex exercitation adipisicing labore reprehenderit eu ea ex eiusmod nulla in aute.'
     },
     {
         key: uuidv4(),
-        image: tools,
+        image: equipment,
         title: 'narzędzia',
         description: 'Esse in magna est sunt. Occaecat labore non ipsum esse veniam cillum aliqua consectetur non ut deserunt. Ex exercitation adipisicing labore reprehenderit eu ea ex eiusmod nulla in aute.'
     },
     {
         key: uuidv4(),
-        image: education,
+        image: training,
         title: 'kształcenie',
         description: 'Esse in magna est sunt. Occaecat labore non ipsum esse veniam cillum aliqua consectetur non ut deserunt. Ex exercitation adipisicing labore reprehenderit eu ea ex eiusmod nulla in aute.'
     },
     {
         key: uuidv4(),
-        image: spreading,
+        image: dissemination,
         title: 'upowszechnienie',
         description: 'Esse in magna est sunt. Occaecat labore non ipsum esse veniam cillum aliqua consectetur non ut deserunt. Ex exercitation adipisicing labore reprehenderit eu ea ex eiusmod nulla in aute.'
     },

@@ -7,13 +7,13 @@ import SectionTitle from '../components/section_title/section_title';
 import { sectionsInfo } from '../data/sections_info';
 import {carouselInfo} from '../data/carousel_info';
 
-const Onboarding = () => {
-  const { onboarding } = sectionsInfo;
-  const [projects, trials] = onboarding;
+const Transfer = () => {
+  const { transfer } = sectionsInfo;
+  const [projects, trials] = transfer;
   const secTitleInfo = carouselInfo[2]
 
   return (
-    <Layout links={onboarding}>
+    <Layout links={transfer}>
       <SectionTitle info={secTitleInfo}/>
         <Section title={projects}>
 
@@ -25,4 +25,4 @@ const Onboarding = () => {
   )
 };
 
-export default Onboarding;
+export default Transfer;
