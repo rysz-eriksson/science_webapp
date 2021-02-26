@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { CarouselProvider, Slider, Slide, DotGroup, Image } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, Image, ButtonBack, ButtonNext } from 'pure-react-carousel';
 
 import crsStyles from './carousel.module.scss';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+
 
 const CustomCarousel = ({content}) => {
     return (
@@ -28,6 +29,10 @@ const CustomCarousel = ({content}) => {
                                 <article>
                                     <h2>{item.title}</h2>
                                     <p>{item.description}</p>
+                                    <div className={crsStyles.buttons}>
+                                        <ButtonBack />
+                                        <ButtonNext />
+                                    </div>
                                 </article>
                             </section>
                             <Image 
@@ -37,7 +42,7 @@ const CustomCarousel = ({content}) => {
                     )
                 })}
             </Slider>
-            <DotGroup className={crsStyles.dotGroup}></DotGroup>
+
         </CarouselProvider>
     )
 }

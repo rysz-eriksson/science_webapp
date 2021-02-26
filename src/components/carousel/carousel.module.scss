@@ -72,7 +72,7 @@ $font-color: #FFFFFF;
             p {
                 font-family: 'Nunito', sans-serif;
                 font-weight: 700;
-                font-size: 1rem;
+                font-size: 18px;
                 letter-spacing: .1rem;
                 text-align: justify;
                 line-height: 24px;
@@ -81,27 +81,24 @@ $font-color: #FFFFFF;
     }
 }
 
-.dotGroup {
-    position: absolute;
-    width: 600px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: 2rem;
+.buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     button {
-        width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        background-color: rgba(gray, .3);
+        padding: 0;
         border: none;
-        &:focus {
-            outline: 0;
-            box-shadow: 0 0 3pt 2pt darken($color: gray, $amount: 30%);
+        background: url('../../images/arrow-circle.svg') center no-repeat;
+        width: 27px;
+        height: 27px;
+        opacity: 0.45;
+        &:active{
+            transform: scale(0.90);
         }
-        &:disabled {
-            transform: scale(1.5);
+        &:last-of-type {
+            transform: rotate(180deg);
+            &:active{
+                transform: rotate(180deg) scale(0.90);
+            }
         }
     }
 }
