@@ -9,7 +9,20 @@ export const projectsInfo = [{
     key: uuidv4(),
     title: 'behawioralne i neuronalne wskaźniki hamowania reakcji w sytuacji konfliktu - badania populacji osób dwujęzycznych',
     image: electro,
-    content: ['kierownik projektu:', 'mgr Patrycja Kałamała']
+    content: ['kierownik projektu:', 'mgr Patrycja Kałamała'],
+    content2: ['instytucja finansująca', 'Narodowe Centrum Nauki'],
+    details: [
+        '',
+        ''
+    ],
+    team: [
+        'zespół',
+        'Imię Nazwisko',
+        'Imię Nazwisko',
+        'Imię Nazwisko',
+        'Imię Nazwisko',
+        'Imię Nazwisko',
+    ]
 },
 {
     key: uuidv4(),

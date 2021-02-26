@@ -87,7 +87,7 @@ $font-color: #FFFFFF;
     button {
         padding: 0;
         border: none;
-        background: url('../../images/arrow-circle.svg') center no-repeat;
+        background: url('../../images/arrow-left.svg') center no-repeat;
         width: 27px;
         height: 27px;
         opacity: 0.45;
@@ -95,10 +95,7 @@ $font-color: #FFFFFF;
             transform: scale(0.90);
         }
         &:last-of-type {
-            transform: rotate(180deg);
-            &:active{
-                transform: rotate(180deg) scale(0.90);
-            }
+            background: url('../../images/arrow-right.svg') center no-repeat;
         }
     }
 }
