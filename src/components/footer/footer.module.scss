@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../../fonts/Nunito-Regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+$bg-color: #20EFAF;
+$font-color: #FFFFFF;
+
+.footer {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-268deg, #20efaf 0%, #36b29a 88%, #36b29a 100%);
+    flex-shrink: 0;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.container {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    section {
+        &:last-of-type {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        text-align: left;
+        color: $font-color;
+        margin: 0 10px;
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: normal;
+            margin: 5px 0;
+        }
+        a {
+            text-decoration: none;
+            color: $font-color;
+        }
+        h4 {
+            font-size: 1rem;
+            margin: 20px 0;
+        }
+    }
+    .logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        img.cm {
+            width: 152px;
+            height: 86px;
+        }
+        img.uj {
+            width: 223px;
+            height: 56px;
+        }
+    }
+    address {
+        font-style: unset;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+    a {
+    display: block;
+    width: 27px;
+    height: 25px;
+    &:nth-of-type(1) {
+        background: url('../../images/facebook.svg') center / cover no-repeat;
+    }
+    &:nth-of-type(2) {
+        background: url('../../images/twitter.svg') center / cover no-repeat;
+    }
+    &:nth-of-type(3) {
+        background: url('../../images/email.svg') center / cover no-repeat;
+    }
+    }
+}
+
+.blackBox {
+    width: 100%;
+    height: 74px;
+    background-color: black;
+}
+
+.greenBox {
+    width: 100%;
+    height: 74px;
+    background-image: linear-gradient(-268deg, #20efaf 0%, #36b29a 88%, #36b29a 100%);
+}

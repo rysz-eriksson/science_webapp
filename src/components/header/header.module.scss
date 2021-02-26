@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'HKGrotest-Black';
+    src: url('../../fonts/HKGrotesk-Black.otf') format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'HKGrotest';
+    src: url('../../fonts/HKGrotesk-SemiBold.otf') format('otf');
+    font-style: normal;
+    font-weight: 600;
+}
+
+$bg-color: #20EFAF;
+$font-color: #FFFFFF;
+
+.container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-268deg, #20efaf 0%, #36b29a 88%, #36b29a 100%);
+    .inner-container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        nav {
+            margin-left: 90px;
+            margin-right: 50px;
+            display: flex;
+            justify-content: flex-end;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                padding: 0;
+                li {
+                    border-right: 1px solid white;
+                    &:last-of-type {
+                    border: none;
+                    }
+                }
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $font-color;
+        font-family: 'HKGrotesk-Black', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.2rem;
+        line-height: 27px;
+        text-transform: uppercase;
+        padding: 0 .4rem;
+    }
+    .active {
+        color: black;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    button {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        border: 1px white solid;
+        background-color: transparent;
+        color: $font-color;
+        padding: .5rem;
+        margin: .2rem;
+    }
+    .activeBtn {
+        font-weight: bold;
+        background-color: rgba($color: #ffffff, $alpha: 0.5);
+        font-weight: bold;
+    }
+}
+
+.logo {
+    width: 139px;
+    height: 46px;
+    margin-left: 90px;
+    a {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+

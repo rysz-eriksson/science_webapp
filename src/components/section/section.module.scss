@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'HKGrotest-Black';
+    src: url('../../fonts/HKGrotesk-Black.otf') format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+$bg-color: #20EFAF;
+$font-color: #FFFFFF;
+
+.titleContainer {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.section {
+    background-color: $font-color;
+    color: $font-color;
+    margin-top: -8rem;
+    padding-top: 8rem;
+    background-clip: content-box;
+    min-height: 300px;
+    overflow: hidden;
+    &:nth-of-type(2n +1) {
+        background-color: #f9f9fc;
+    }
+    h2 {
+        color: #020001;
+        font-family: 'HKGrotest-Black', sans-serif;
+        margin: 3rem 0;
+        text-align: right;
+        width: 300px;
+        font-size: 18px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $bg-color;
+            height: 2px;
+            width: calc(300% + 15px);
+            bottom: -3px;
+            right: -15px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $bg-color;
+            bottom: -8px;
+            right: -23px;
+            border: 6px solid $bg-color;
+            border-radius: 50%;
+        }
+    }
+}
+
+.button {
+    margin-bottom: 2.5rem;
+    margin-right: 10%;
+    text-align: right;
+}
