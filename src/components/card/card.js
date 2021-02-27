@@ -35,7 +35,12 @@ const CustomCard = ({content, action}) => {
                 </CardContent>
             </Card>
         </CardActionArea>
-        {action === 'dialog' && <CustomDialog onClose={handleClose} open={open} />}
+        {action === 'dialog' && 
+        <CustomDialog 
+            onClose={handleClose}
+            open={open}
+            content={content}
+        />}
     </>
     )
 }

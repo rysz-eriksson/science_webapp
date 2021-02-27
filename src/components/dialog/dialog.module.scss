@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../../fonts/Nunito-ExtraBold.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'HKGrotest-Black';
+    src: url('../../fonts/HKGrotesk-Black.otf') format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+$bg-color: #20EFAF;
+$font-color: #FFFFFF;
+
+.article {
+    margin: 84px 98px 84px 90px;
+    h3 {
+        font-family: "HK Grotesk", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: 1.5px;
+        line-height: 22px;
+        text-align: left;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    p {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 23px;
+        text-align: justify;
+        margin: 0;
+    }
+    h3.team {
+        margin: 30px 0 5px 0;
+    }
+    p.team {
+        letter-spacing: 0.56px;
+    }
+
+    .subtitles {
+        margin: 30px 0;
+    }
+
+}
+
+.button {
+    padding: 0;
+    border: none;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    right: 32px;
+    top: 31px;  
+    background: url('../../images/close-icon.svg') center no-repeat;
+    width: 37px;
+    height: 37px;
+    &:active{
+        transform: scale(0.90);
+    }
+    &:focus {
+        box-shadow: 0 0 5px $bg-color;
+    }
+}
