@@ -4,16 +4,17 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Dialog from '@material-ui/core/Dialog';
 import CustomDialog from '../dialog/dialog';
 
 import cardStyles from './card.module.scss';
 
-const CustomCard = ({title, content, image}) => {
+const CustomCard = ({content, action}) => {
     const [open, setOpen] = useState(false);
 
-    const handleClickOpen = () => {
-      setOpen(true);
+    const handleClickAction = () => {
+        if (action === 'dialog') {
+            setOpen(true);
+        }
     };
     const handleClose = () => {
       setOpen(false);
@@ -21,20 +22,20 @@ const CustomCard = ({title, content, image}) => {
 
     return (
     <>
-        <CardActionArea className={cardStyles.action} onClick={handleClickOpen}>
+        <CardActionArea className={cardStyles.action} onClick={handleClickAction}>
             <Card className={cardStyles.card}>
-                <CardMedia image={image} className={cardStyles.image}/>
+                <CardMedia image={content.image} className={cardStyles.image}/>
                 <CardContent className={cardStyles.content}>
                     <h4 className={cardStyles.title}>
-                        {title}
+                        {content.title}
                     </h4>
                     <div>
-                        {content.map(par => <p key={par.slice(-5)} className={cardStyles.paragraph}>{par}</p>)}
+                        {content.subtitle.map(par => <p key={par.slice(-5)} className={cardStyles.paragraph}>{par}</p>)}
                     </div>
                 </CardContent>
             </Card>
         </CardActionArea>
-        <CustomDialog onClose={handleClose} open={open} />
+        {action === 'dialog' && <CustomDialog onClose={handleClose} open={open} />}
     </>
     )
 }

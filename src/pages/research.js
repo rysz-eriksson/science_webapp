@@ -21,7 +21,7 @@ const Research = () => {
     <Layout links={research}>
         <SectionTitle info={secTitleInfo}/>
         <Section title={projects}>
-          <CardContainer content={projectsInfo} />
+          <CardContainer content={projectsInfo} action='dialog' />
         </Section>
         <Section title={pubs}>
             <CustomAccordion articles={articlesInfo}/>
