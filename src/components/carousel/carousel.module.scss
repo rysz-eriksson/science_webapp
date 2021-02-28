@@ -16,13 +16,17 @@ $bg-color: #20EFAF;
 $font-color: #FFFFFF;
 
 .carousel {
-    height: calc(100vh - 144px);
+    height: calc(100vh - 70px);
     position: relative;
 }
 
 .slider {
     height: 100%;
     width: 100%;
+}
+
+.image {
+    object-fit: cover;
 }
 
 .slide {
@@ -35,7 +39,7 @@ $font-color: #FFFFFF;
     section {
         background-color: black;
         width: 50%;
-        height: calc(100vh - 144px);
+        height: calc(100vh - 70px);
         padding: 20% 5% 0 5%;
         display: flex;
         align-items: center;

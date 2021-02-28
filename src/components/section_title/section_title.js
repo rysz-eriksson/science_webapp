@@ -14,7 +14,7 @@ const SectionTitle = ({info}) => {
             <Overlay>
                 <div className={secTitleStyles.article}>
                     <article>
-                        <h2>{info.title}</h2>
+                        <h2>{info.title.pl}</h2>
                         <p>{info.description}</p>
                     </article>
                 </div>

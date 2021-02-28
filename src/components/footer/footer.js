@@ -9,7 +9,7 @@ import footerStyles from './footer.module.scss';
 const Footer = ({links}) => {
     return (
         <footer>
-            <div className={links ? footerStyles.footer : footerStyles.noDisplay}>
+            <div className={footerStyles.footer}>
             <div className={footerStyles.container}>
                 <section className={footerStyles.logos}>
                     <img 
@@ -54,10 +54,7 @@ const Footer = ({links}) => {
                 </section>
             </div>
         </div>
-        <div 
-            className={footerStyles.blackBox}
-            className={links ? footerStyles.blackBox : footerStyles.greenBox}
-        >
+        <div className={footerStyles.blackBox}>
         </div>
         </footer>
     )

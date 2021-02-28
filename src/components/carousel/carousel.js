@@ -1,4 +1,5 @@
 import React from 'react';
+import {navigate} from 'gatsby'
 
 import { CarouselProvider, Slider, Slide, Image, ButtonBack, ButtonNext } from 'pure-react-carousel';
 
@@ -7,6 +8,13 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 
 const CustomCarousel = ({content}) => {
+    const handleOnClick = (path) => {
+        if (typeof window !== 'undefined') {
+            console.log(path)
+            navigate(`/${path}`)
+        }
+    }
+
     return (
         <CarouselProvider
             naturalSlideWidth={8}
@@ -26,9 +34,19 @@ const CustomCarousel = ({content}) => {
                             className={crsStyles.slide}
                         >
                             <section>
-                                <article>
-                                    <h2>{item.title}</h2>
-                                    <p>{item.description}</p>
+                                <article> 
+                                    <h2
+                                        onClick={(() => { handleOnClick(item.title.en)})}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        {item.title.pl}
+                                    </h2>
+                                    <p
+                                        onClick={(() => { handleOnClick(item.title.en)})}
+                                        style={{ cursor: 'pointer' }}
+                                    >
+                                        {item.description}
+                                    </p>
                                     <div className={crsStyles.buttons}>
                                         <ButtonBack />
                                         <ButtonNext />
@@ -37,6 +55,8 @@ const CustomCarousel = ({content}) => {
                             </section>
                             <Image 
                                 src={item.image}
+                                //isBgImagea={true}
+                                className={crsStyles.image}
                             />
                         </Slide>
                     )
