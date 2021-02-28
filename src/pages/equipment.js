@@ -13,19 +13,21 @@ const Equipment = () => {
   const { equipment } = sectionsInfo;
   const [neuroimaging, brain, sensory] = equipment;
   const secTitleInfo = carouselInfo[3]
-  const {mri} = equipmentInfo
+  const {mri, spectroscophy, electrophysiology, electricStimulation, touchSeeHear} = equipmentInfo
 
   return (
     <Layout links={equipment}>
         <SectionTitle info={secTitleInfo}/>
         <Section title={neuroimaging}>
           <OverflowText content={mri} />
+          <OverflowText content={spectroscophy} />
+          <OverflowText content={electrophysiology} />
         </Section>
         <Section title={brain}>
-
+          <OverflowText content={electricStimulation} />
         </Section>
         <Section title={sensory}>
-
+          <OverflowText content={touchSeeHear} />
         </Section>
     </Layout>
   )
