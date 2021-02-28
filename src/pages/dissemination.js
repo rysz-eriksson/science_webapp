@@ -9,7 +9,7 @@ import {carouselInfo} from '../data/carousel_info';
 
 const Dissemination = () => {
   const { dissemination } = sectionsInfo;
-  const [media, lectures] = dissemination;
+  const [media, talks, meetings] = dissemination;
   const secTitleInfo = carouselInfo[5]
 
   return (
@@ -18,7 +18,10 @@ const Dissemination = () => {
         <Section title={media}>
 
         </Section>
-        <Section title={lectures}>
+        <Section title={talks}>
+
+        </Section>
+        <Section title={meetings}>
 
         </Section>
     </Layout>

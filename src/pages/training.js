@@ -9,16 +9,19 @@ import {carouselInfo} from '../data/carousel_info';
 
 const Training = () => {
   const { training } = sectionsInfo;
-  const [cognes, internship] = training;
+  const [phd, internship, funding] = training;
   const secTitleInfo = carouselInfo[4]
 
   return (
     <Layout links={training}>
         <SectionTitle info={secTitleInfo}/>
-        <Section title={cognes}>
+        <Section title={phd}>
 
         </Section>
         <Section title={internship}>
+
+        </Section>
+        <Section title={funding}>
 
         </Section>
     </Layout>

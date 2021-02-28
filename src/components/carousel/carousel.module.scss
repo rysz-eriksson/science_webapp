@@ -45,6 +45,7 @@ $font-color: #FFFFFF;
         align-items: center;
         text-align: end;
         overflow: hidden;
+        position: relative;
         article {
             width: 80%;
             margin: 0 auto 20% auto;
@@ -77,6 +78,7 @@ $font-color: #FFFFFF;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 700;
                 font-size: 18px;
+                margin-left: 15%;
                 letter-spacing: .1rem;
                 text-align: justify;
                 line-height: 24px;
@@ -86,8 +88,13 @@ $font-color: #FFFFFF;
 }
 
 .buttons {
+    position: absolute;
     display: flex;
     justify-content: space-between;
+    bottom: 10%;
+    left: 27%;
+    width: 55%;
+    margin: 0 auto;
     button {
         padding: 0;
         border: none;

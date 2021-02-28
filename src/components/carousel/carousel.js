@@ -34,28 +34,20 @@ const CustomCarousel = ({content}) => {
                             className={crsStyles.slide}
                         >
                             <section>
-                                <article> 
-                                    <h2
-                                        onClick={(() => { handleOnClick(item.title.en)})}
-                                        style={{ cursor: 'pointer' }}
-                                    >
-                                        {item.title.pl}
-                                    </h2>
-                                    <p
-                                        onClick={(() => { handleOnClick(item.title.en)})}
-                                        style={{ cursor: 'pointer' }}
-                                    >
-                                        {item.description}
-                                    </p>
-                                    <div className={crsStyles.buttons}>
+                                <article
+                                    onClick={(() => { handleOnClick(item.title.en)})}
+                                    style={{ cursor: 'pointer' }}
+                                > 
+                                    <h2>{item.title.pl}</h2>
+                                    <p>{item.descShort.pl}</p>
+                                </article>
+                                <div className={crsStyles.buttons}>
                                         <ButtonBack />
                                         <ButtonNext />
                                     </div>
-                                </article>
                             </section>
                             <Image 
                                 src={item.image}
-                                //isBgImagea={true}
                                 className={crsStyles.image}
                             />
                         </Slide>

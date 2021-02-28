@@ -16,55 +16,60 @@ $bg-color: #20EFAF;
 $font-color: #FFFFFF;
 
 .title {
-    width: 790px;
-    height: 400px;
-    margin: 195px auto 35px auto;
+    background: url('../../images/baner.png') center / cover no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    }
 
-}
-    .article {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        article {
-            margin-left: 90px;
-            margin-right: 220px;
-            h2 {
-                text-transform: uppercase;
-                font-family: 'HKGrotest-Black', sans-serif;
-                font-size: 18px;
-                letter-spacing: .1rem;
-                position: relative;
-                text-align: right;
-                margin-bottom: 2rem;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    background-color: $font-color;
-                    height: 2px;
-                    width: calc(120% + 15px);
-                    bottom: -2px;
-                    right: -15px;
-                }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    background-color: $font-color;
-                    bottom: -7px;
-                    right: -17px;
-                    border: 6px solid $font-color;
-                    border-radius: 50%;
-                }
-            }
-            p {
-                font-family: 'Nunito', sans-serif;
-                font-weight: 700;
-                font-size: 1rem;
-                letter-spacing: .1rem;
-                text-align: justify;
-                line-height: 24px;
-            }
+.titleContainer {
+    width: 950px;
+    h2 {
+        color: $font-color;
+        text-transform: uppercase;
+        font-family: 'HKGrotest-Black', sans-serif;
+        margin-bottom: 2rem;
+        letter-spacing: 0.1rem;
+        text-align: right;
+        width: 300px;
+        font-size: 18px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $font-color;
+            height: 2px;
+            width: calc(300% + 15px);
+            bottom: -3px;
+            right: -15px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: $font-color;
+            bottom: -8px;
+            right: -23px;
+            border: 6px solid $font-color;
+            border-radius: 50%;
         }
     }
-    
+}
+
+article {
+    width: 790px;
+    height: fit-content;
+    margin-bottom: 75px;
+    position: relative;
+    p {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        text-align: justify;
+        line-height: 24px;
+    }
+}
+

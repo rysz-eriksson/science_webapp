@@ -14,7 +14,7 @@ export const sectionsInfo = {
         },
         {
             pl: 'zespoły badawcze',
-            en: 'research groups',
+            en: 'research teams',
             key: uuidv4(),    
         },
         {
@@ -43,7 +43,7 @@ export const sectionsInfo = {
     transfer: [     
         {
             pl: 'projekty aplikacyjne',
-            en: 'application projects',
+            en: 'applied research',
             key: uuidv4(),    
         },
         {
@@ -55,24 +55,34 @@ export const sectionsInfo = {
     equipment: [
         {
             pl: 'rezonans magnetyczny',
-            en: 'MRI',
+            en: 'Neuroimaging',
             key: uuidv4(),    
         },
         {
-            pl: 'spektroskopia',
-            en: 'spectroscopy',
+            pl: 'stymulacja mózgu',
+            en: 'brain stimulation',
+            key: uuidv4(),    
+        },
+        {
+            pl: 'stymulacja sensoryczna',
+            en: 'sensory stimulation',
             key: uuidv4(),    
         },
     ],
     training: [
         {
-            pl: 'cognes',
-            en: 'cognes',
+            pl: 'studia doktoranckie',
+            en: 'PhD studies',
             key: uuidv4(),    
         },
         {
             pl: 'staże badawcze',
-            en: 'science internships',
+            en: 'internships',
+            key: uuidv4(),    
+        },
+        {
+            pl: 'External funding',
+            en: 'External funding',
             key: uuidv4(),    
         },
     ],
@@ -84,7 +94,12 @@ export const sectionsInfo = {
         },
         {
             pl: 'wykłady',
-            en: 'lectures',
+            en: 'talks',
+            key: uuidv4(),    
+        },
+        {
+            pl: 'cykle spotkań',
+            en: 'series of meetings',
             key: uuidv4(),    
         },
     ],

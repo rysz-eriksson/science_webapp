@@ -9,16 +9,19 @@ import {carouselInfo} from '../data/carousel_info';
 
 const Equipment = () => {
   const { equipment } = sectionsInfo;
-  const [mri, spectroscopy] = equipment;
+  const [neuroimaging, brain, sensory] = equipment;
   const secTitleInfo = carouselInfo[3]
 
   return (
     <Layout links={equipment}>
         <SectionTitle info={secTitleInfo}/>
-        <Section title={mri}>
+        <Section title={neuroimaging}>
 
         </Section>
-        <Section title={spectroscopy}>
+        <Section title={brain}>
+
+        </Section>
+        <Section title={sensory}>
 
         </Section>
     </Layout>

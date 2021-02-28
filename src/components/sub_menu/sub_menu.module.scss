@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'HKGrotest';
-    src: url('../../fonts/HKGrotesk-Regular.otf') format('otf');
+    font-family: 'HKGrotest-Black';
+    src: url('../../fonts/HKGrotesk-Black.otf') format('otf');
     font-style: normal;
     font-weight: 400;
 }
@@ -19,17 +19,17 @@ $font-color: #FFFFFF;
     background-color: black;
     a {
         text-decoration: none;
-        font-family: 'HKGrotest', sans-serif;
-        font-size: 14px;
+        font-family: 'HKGrotest-Black', sans-serif;
+        font-size: 12px;
         font-weight: 700;
         line-height: 22px;
         text-transform: uppercase;
         color: $font-color;
-        letter-spacing: 0.2rem;
-        padding: 0 .4rem;
+        letter-spacing: 0.25rem;
+        padding: 0 .6rem;
     }
     nav {
-        width: 1070px;
+        width: 1020px;
         margin: 0 auto;
         ul {
             display: flex;
