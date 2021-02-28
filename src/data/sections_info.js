@@ -54,7 +54,7 @@ export const sectionsInfo = {
     ],
     equipment: [
         {
-            pl: 'rezonans magnetyczny',
+            pl: 'neuroobrazowanie',
             en: 'Neuroimaging',
             key: uuidv4(),    
         },

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../../fonts/Nunito-Regular.ttf') format('ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'HKGrotest-Black';
+    src: url('../../fonts/HKGrotesk-Black.otf') format('otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+$bg-color: #20EFAF;
+$font-color: #FFFFFF;
+
+.article {
+    width: 790px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 230px;
+        height: 168px;
+    }
+    div {
+        width: 512px;
+        h3 {
+            color: #040300;
+            font-family: "HKGrotest-Black", sans-serif;
+            font-size: 16px;
+            font-weight: 900;
+            font-style: normal;
+            letter-spacing: 3.2px;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+        p {
+            color: #040300;
+            font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: normal;
+            line-height: 23px;
+            text-align: justify;
+        }
+        span {
+            color: $bg-color;
+            font-weight: bold;
+            &:hover {
+                cursor: pointer;
+            }
+            &:active {
+                color: #040300;
+            }
+        }
+    }
+}
